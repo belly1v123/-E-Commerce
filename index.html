@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="index.js"></script>
+		<style>
+			#category-items {
+				background-color: beige;
+				padding: 10px;
+				width: 30vw;
+
+				h1 {
+					text-align: center;
+					color: green;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Product category</h1>
+		<form>
+			<input type="text" id="category-name" placeholder="category name" />
+			<button type="submit" id="create-category-btn">create category</button>
+		</form>
+		<h4 id="category-title">Category List</h4>
+		<ol id="category-list"></ol>
+
+		<div id="category-items">
+			<h1>Category Items</h1>
+			<select name="category" id="category-select"></select>
+
+			<br />
+			<input
+				type="text"
+				name="itemName"
+				id="item-input"
+				placeholder="Enter item" />
+			<input
+				type="text"
+				name="itemName"
+				id="price-input"
+				placeholder="Enter price" />
+			<button id="add-item">Add item</button>
+
+			<h1 id="product-title">Product List</h1>
+			<div id="product-list"></div>
+		</div>
+
+		<script src="./Lab1/product_category.js"></script>
+	</body>
+</html>
